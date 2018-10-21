@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".customview.CustomView01To11Activity">
+
+    <LinearLayout
+        android:id="@+id/custom01_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".customview.CustomView01To11Activity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical">
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView01
+                android:id="@+id/custom01_cv"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:visibility="visible"
+                />
+
+            <Button
+                android:id="@+id/custom01_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开始动画"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:orientation="vertical"
+           >
+
+           <com.example.jasonjan.animdemo.customview.view.CustomView02
+               android:id="@+id/custom02_cv"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:layout_height="0dp"
+               android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="画一个实心圆"
+                android:layout_gravity="center_horizontal"
+                />
+
+       </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical"
+            >
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView03
+                android:id="@+id/custom03_cv"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="利用mPaint.setColorFilter(new ColorMatrixColorFilter(colorMatrix));改变颜色"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView04
+                android:id="@+id/custom04_cv"
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView05
+                android:id="@+id/custom05_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView06
+                android:id="@+id/custom06_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView07
+                android:id="@+id/custom07_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView08
+                android:id="@+id/custom08_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView09
+                android:id="@+id/custom09_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView10
+                android:id="@+id/custom10_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <com.example.jasonjan.animdemo.customview.view.CustomView11
+                android:id="@+id/custom11_cv"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="600dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/custom05_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="变暗"
+                    />
+
+                <Button
+                    android:id="@+id/custom06_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="黑白"
+                    />
+
+                <Button
+                    android:id="@+id/custom07_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="反相"
+                    />
+
+                <Button
+                    android:id="@+id/custom08_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="老照片"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/custom09_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="红蓝交换"
+                    />
+
+                <Button
+                    android:id="@+id/custom10_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高对比"
+                    />
+
+                <Button
+                    android:id="@+id/custom11_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加强饱和度"
+                    />
+
+                <Button
+                    android:id="@+id/custom04_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="原图"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

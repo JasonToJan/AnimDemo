@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jasonjan.animdemo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".DemoApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".rocket.RocketActivity" />
+        <activity android:name=".meituan.MeiTuanRefreshActivity" />
+        <activity android:name=".meituan.MyActivity" />
+        <activity android:name=".customview.CustomViewActivity" />
+        <activity android:name=".customview.CustomView01To11Activity" />
+        <activity android:name=".customview.CustomView12To18Activity" />
+        <activity android:name=".customview.CustomView19To27Activity" />
+        <activity android:name=".customview.CustomView28To34Activity" />
+        <activity android:name=".customview.CustomView35To42Activity"></activity>
+    </application>
+
+</manifest>
