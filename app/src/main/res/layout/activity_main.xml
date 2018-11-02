@@ -39,4 +39,14 @@
         android:textColor="@android:color/black"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/visualizerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="频谱系列"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
 </LinearLayout>

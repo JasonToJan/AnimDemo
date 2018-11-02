@@ -2,4 +2,37 @@
     <string name="app_name">AnimDemo</string>
 
     <string name="action_settings">设置</string>
+    <string name="move_device">移动你的设备</string>
+    <string name="blue">Blue</string>
+    <string name="green">Green</string>
+
+    <string name="Plate">Plate</string>
+    <string name="save_user">Save Preset</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="replace">Overwrite</string>
+    <string name="enter_preset_name_hint">Preset name</string>
+    <string name="isHavePreset">Preset name exist!</string>
+    <string name="edit">Edit</string>
+    <string name="control_mode_background">Control mode background</string>
+    <string name="visualizer_background">Visualizer background</string>
+    <string name="highlight_background">Highlight background</string>
+    <string name="standard_language">Standard language</string>
+    <string name="window_background">Window background</string>
+    <string name="background">Background</string>
+    <string name="icon">Icon</string>
+    <string name="border">Border</string>
+    <string name="divider">Divider</string>
+    <string name="text">Text</string>
+    <string name="window_text">Window text</string>
+    <string name="window_text_disabled">Window text (disabled)</string>
+    <string name="highlight_text">Highlight text</string>
+    <string name="text_secondary">Text (secondary)</string>
+    <string name="top_background">Top background</string>
+    <string name="bottom_background">Bottom background</string>
+    <string name="pressed_background">Pressed background</string>
+    <string name="no_info">-</string>
+    <string name="sorry">Sorry!</string>
+    <string name="opengl_not_supported">opengl_not_supported</string>
+
 </resources>

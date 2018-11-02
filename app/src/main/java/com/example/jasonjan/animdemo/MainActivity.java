@@ -10,22 +10,27 @@ import com.example.jasonjan.animdemo.customview.CustomViewActivity;
 import com.example.jasonjan.animdemo.meituan.MeiTuanRefreshActivity;
 import com.example.jasonjan.animdemo.rocket.RocketActivity;
 
+import net.coocent.tool.visualizer.VisualizerActivity;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     /**
      * 启动火箭动画按钮
      */
     private Button rocketBtn;
-
     /**
      * 美团刷新按钮
      */
     private Button meituanRefreshBtn;
-
     /**
      * 自定义视图系列
      */
     private Button customViewBtn;
+    /**
+     * 频谱系列
+     */
+    private Button visualizerBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +45,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         customViewBtn=(Button) findViewById(R.id.customViewBtn);
         customViewBtn.setOnClickListener(this);
+
+        visualizerBtn=(Button) findViewById(R.id.visualizerBtn);
+        visualizerBtn.setOnClickListener(this);
     }
 
     @Override
@@ -59,6 +67,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.customViewBtn:
                 Intent intent3=new Intent(this,CustomViewActivity.class);
                 startActivity(intent3);
+                break;
+
+            case R.id.visualizerBtn:
+                Intent intent4=new Intent(this,VisualizerActivity.class);
+                startActivity(intent4);
                 break;
 
             default:

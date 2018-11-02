@@ -32,7 +32,17 @@
         <activity android:name=".customview.CustomView12To18Activity" />
         <activity android:name=".customview.CustomView19To27Activity" />
         <activity android:name=".customview.CustomView28To34Activity" />
-        <activity android:name=".customview.CustomView35To42Activity"></activity>
+        <activity android:name=".customview.CustomView35To42Activity" />
+
+        <activity
+            android:name="net.coocent.tool.visualizer.VisualizerActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:multiprocess="false"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+
     </application>
 
 </manifest>
