@@ -250,7 +250,7 @@ public class VisualizerActivity extends Activity implements View.OnClickListener
         }
 
         //获取频谱相关参数，是否开启线程，是否竖直方向，是否隐藏控制面板
-        boolean visualizerRequiresThread=false;
+        boolean visualizerRequiresThread=true;
         if (visualizer != null) {
             requiredOrientation = visualizer.requiredOrientation();
             visualizerRequiresHiddenControls = visualizer.requiresHiddenControls();

@@ -419,13 +419,10 @@ public final class OpenGLVisualizerJni extends GLSurfaceView implements GLSurfac
 				if (ctx != null && ctx != EGL10.EGL_NO_CONTEXT) {
 					//try to create a surface and make it current successfully
 					//before confirming this is the right config/context
-					try{
-						holder.setFormat((r == 5) ? PixelFormat.RGB_565 : PixelFormat.RGBA_8888);
-						surface = egl.eglCreateWindowSurface(display, this.config, holder, null);
-					}catch (Exception e){
-						e.printStackTrace();
-						return null;
-					}
+
+					//holder.setFormat((r == 5) ? PixelFormat.RGB_565 : PixelFormat.RGBA_8888);//这句话导致某些手机ANR，直接跑到SurfaceDestroy中了
+					surface = egl.eglCreateWindowSurface(display, this.config, holder, null);
+
 
 					if (surface != null && surface != EGL10.EGL_NO_SURFACE) {
 						//try to make current

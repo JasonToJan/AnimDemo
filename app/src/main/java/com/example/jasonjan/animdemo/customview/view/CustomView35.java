@@ -64,12 +64,14 @@ public class CustomView35 extends AppCompatImageView {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction() & MotionEvent.ACTION_MASK) {
+
             case MotionEvent.ACTION_DOWN:// 单点接触屏幕时
                 savedMatrix.set(currentMatrix);
-                start.set(event.getX(), event.getY());
-                mode = MODE_DRAG;
+                start.set(event.getX(), event.getY());//起点
+                mode = MODE_DRAG;//拖拽模式
                 preEventCoor = null;
                 break;
+
             case MotionEvent.ACTION_POINTER_DOWN:// 第二个点接触屏幕时
                 preMove = calSpacing(event);
                 if (preMove > 10F) {
@@ -84,11 +86,14 @@ public class CustomView35 extends AppCompatImageView {
                 preEventCoor[3] = event.getY(1);
                 saveRotate = calRotation(event);
                 break;
+
             case MotionEvent.ACTION_UP:// 单点离开屏幕时
+
             case MotionEvent.ACTION_POINTER_UP:// 第二个点离开屏幕时
                 mode = MODE_NONE;
                 preEventCoor = null;
                 break;
+
             case MotionEvent.ACTION_MOVE:// 触摸点移动时
                 /*
                  * 单点触控拖拽平移
@@ -100,7 +105,7 @@ public class CustomView35 extends AppCompatImageView {
                     currentMatrix.postTranslate(dx, dy);
                 }
                 /*
-                 * 两点触控拖放旋转
+                 * 两点触控拖放或旋转
                  */
                 else if (mode == MODE_ZOOM && event.getPointerCount() == 2) {
                     float currentMove = calSpacing(event);
